@@ -1,4 +1,8 @@
 import React from "react";
+import Navbar from "./Navbar";
+import Jumbotron from "./jumbotron";
+import CardList from "./cardList";
+import Footer from "./footer";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -6,21 +10,35 @@ import rigoImage from "../../img/rigo-baby.jpg";
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-            
+		<div className="container-fluid">
+			<Navbar />
+		
+		<div className="row container container-fluid mx-auto mt-2">
+			<div className="col-12"><Jumbotron
+			title = "Hola Mundoo"
+			text = "Este es mi jumbotron reutilizableeeeeeeeee"
+			buttonText = "Este es Mi Boton"
+			/>
+			</div>
+			
+		<CardList/>
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		</div>
+
+			<Footer/>
+		
+			<div className="row">
+				<div className="col-sm-12 navbar">
+					
+				
+			</div>
+
+			</div>
+			
+			<div className="body">
+
+			</div>
+
 		</div>
 	);
 };

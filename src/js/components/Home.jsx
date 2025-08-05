@@ -12,17 +12,14 @@ const Home = () => {
 	return (
 		<>
 		<NavBarElemnt />
-		<div className="container-fluid">
-			
-		
-			<div className="row container  mx-auto mt-2">
+			<div className="container mx-auto mt-2">
 				<JumbotronElement/>
 				<CardList/>
 			</div>
 
 			
 
-		</div>
+	
 		<Footer/>
 		</>
 	);

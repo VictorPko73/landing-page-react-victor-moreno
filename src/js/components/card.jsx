@@ -1,6 +1,5 @@
 import React from "react";
 
-import rigoImage from "../../img/rigo-baby.jpg";
 
 const Card = ({ title, text, imageUrl, buttonText, onButtonClick }) => (
   <div className="card" style={{ width: "18rem" }}>

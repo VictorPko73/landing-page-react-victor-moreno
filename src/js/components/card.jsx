@@ -1,6 +1,6 @@
 import React from "react";
 
-
+import rigoImage from "../../img/rigo-baby.jpg";
 
 const Card = ({ title, text, imageUrl, buttonText, onButtonClick }) => (
   <div className="card" style={{ width: "18rem" }}>
@@ -19,31 +19,31 @@ const Card = ({ title, text, imageUrl, buttonText, onButtonClick }) => (
 
 const cardData = [
     {
-        imgUrl: "1",
-        tittle: "1",
-        text: "Text1",
-        buttonText: "OK"
+        imageUrl: "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg",
+        title: "CARD 1",
+        text: "Descripción de la card 1",
+        buttonText: "Pulsa Aquí!"
 },   {
-        imgUrl: "2",
-        tittle: "2",
-        text: "Text2",
-        buttonText: "OKi"
+        imageUrl: "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg",
+        title: "CARD 2",
+        text: "Descripción de la card 2",
+        buttonText: "Pulsa Aquí!"
 },   {
-        imgUrl: "3",
-        tittle: "3",
-        text: "Text3",
-        buttonText: "Oki2"
+        imageUrl: "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg",
+        title: "CARD 3",
+        text: "Descripción de la card 3",
+        buttonText: "Pulsa Aquí!"
 },   {
-        imgUrl: "4",
-        tittle: "4",
-        text: "Text4",
-        buttonText: "oki3"
+        imageUrl: "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg",
+        title: "CARD 4",
+        text: "Descripción de la card 4",
+        buttonText: "Pulsa Aquí!"
 }
 
 ]
 
 const CardList = () => (
-    <div className="d-flex flex-wrap justify-content-center gap-3">
+    <div className="container-fluid d-flex flex-wrap justify-content-center gap-4 ">
     
     {cardData.map((card, index) => (
       <Card

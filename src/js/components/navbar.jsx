@@ -1,8 +1,7 @@
 import React from "react";
 
-const Navbar = ({title, element1, element2, element3, element4}) => {
-    return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+const Navbar = ({title, element1, element2, element3, element4}) => (
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">{title || "Title"}</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +27,7 @@ const Navbar = ({title, element1, element2, element3, element4}) => {
         </nav>
 
     );
-};
+
 
 const navBarData = [{
     title : "Start Bootstrap",
@@ -39,7 +38,7 @@ const navBarData = [{
 }]
 
 const NavBarElement = () => (
-    <div >
+    <div>
     
     {navBarData.map((navbar, index) => (
       <Navbar

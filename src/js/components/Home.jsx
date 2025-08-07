@@ -1,8 +1,8 @@
 import React from "react";
-import NavBarElemnt from "./navbar";
-import JumbotronElement from "./jumbotron";
-import CardList from "./card";
-import Footer from "./footer";
+import NavBarElemnt from "./nabvarElement";
+import JumbotronElement from "./jumbotronElement";
+import CardList from "./cardList";
+import Footer from "./footerElement";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -15,6 +15,7 @@ const Home = () => {
 			<div className="container mx-auto mt-2">
 				<JumbotronElement/>
 				<CardList/>
+				
 			</div>
 
 			

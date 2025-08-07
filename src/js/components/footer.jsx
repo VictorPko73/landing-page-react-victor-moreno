@@ -10,24 +10,4 @@ const Footer = ({text}) => {
     </footer>
 )};
 
-
-const FooterData = [{
-    text: "Copiriht © Your Website 2025",
-}]
-
-
-const FooterElement = () => (
-    <div>
-    
-    {FooterData.map((footer, index) => (
-      <Footer
-        key={index}
-        text={footer.text}
-        
-      />
-      
-    ))}
-  </div>
-)
-
-export default FooterElement;
+export default Footer;

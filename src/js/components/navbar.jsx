@@ -29,29 +29,6 @@ const Navbar = ({title, element1, element2, element3, element4}) => (
     );
 
 
-const navBarData = [{
-    title : "Start Bootstrap",
-    element1: "Home",
-    element2: "About",
-    element3: "Service",
-    element4: "Contact"
-}]
 
-const NavBarElement = () => (
-    <div>
-    
-    {navBarData.map((navbar, index) => (
-      <Navbar
-        key={index}
-        title={navbar.title}
-        element1={navbar.element1}
-        element2={navbar.element2}
-        element3={navbar.element3}
-        element4={navbar.element4}
-      />
-      
-    ))}
-  </div>
-)
 
-export default NavBarElement;
+export default Navbar;

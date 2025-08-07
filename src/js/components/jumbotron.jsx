@@ -16,25 +16,6 @@ const Jumbotron = ({ title, text, buttonText, onButtonClick }) => {
   );
 };
 
-const JumbotronData = [{
-  title: "Este es el título de mi JumboTrom",
-  text: "Aqui se insertaria la descripción de mi jumbotron creado como un componente de react y totalmente reutilizable",
-  buttonText: "Haz Click Aquí!!"
-}]
 
-const JumbotronElement = () => (
-  <div>
-    {JumbotronData.map((jumbotron, index) => (
-      <Jumbotron
-        key = {index}
-        title={jumbotron.title}
-        text={jumbotron.text}
-        buttonText={jumbotron.buttonText}
-      />
-    ))
 
-    }
-  </div>
-)
-
-export default JumbotronElement;
+export default Jumbotron;
